@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full (click)="fbLogin()">Connect with facebook</button>
+  <ion-card *ngIf="userProfile">
+    <img src="{{userProfile.picture.data.url}}" >
+    <p>E-mail: {{ userProfile.email }}</p>
+    <p>Nome: {{ userProfile.name }}</p>
+    <p>SobreNome: {{ userProfile.middle_name }}</p>
+    <p>Ultimo Nome:{{ userProfile.last_name }}</p>
+s  </ion-card>
+</ion-content>

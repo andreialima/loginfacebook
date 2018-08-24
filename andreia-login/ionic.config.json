@@ -1,0 +1,7 @@
+{
+  "name": "andreia-login",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
